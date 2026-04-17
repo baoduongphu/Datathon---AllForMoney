@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual environment
+venv/
+env/
+
+# Models
+*.pt
+*.pth
+*.h5
+
+# IDE
+.vscode/
+.idea/
