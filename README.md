@@ -32,3 +32,35 @@ python -m venv venv
 pip install -r requirements.txt
 ```
 
+## 📂 Cấu trúc dự án (Project Structure)
+
+Dự án được tổ chức theo cấu trúc chuẩn để đảm bảo tính tái lập (reproducibility) và dễ dàng quản lý:
+
+```text
+datathon-2026-the-gridbreakers/
+│
+├── data/                       # Chứa dữ liệu đầu vào
+│   ├── raw/                    # Dữ liệu gốc từ BTC (orders.csv, sales.csv,...)
+│   └── processed/              # Dữ liệu đã làm sạch và tạo đặc trưng (Features)
+│
+├── notebooks/                  # Chứa toàn bộ các file Jupyter Notebook
+│   ├── 0_MCQ_Part1.ipynb       # Code thực hiện và lưu kết quả bài thi Trắc nghiệm (Phần 1)
+│   ├── 1_EDA_Analysis.ipynb    # Code thực hiện Trực quan hóa và Phân tích (Phần 2)
+│   ├── 2_Feature_Eng.ipynb     # Code kết hợp các bảng, xử lý chuỗi thời gian, kiểm soát leakage
+│   └── 3_Forecasting.ipynb     # Code huấn luyện mô hình, tối ưu và giải thích mô hình (SHAP)
+│
+├── src/                        # Các module Python dùng chung (.py)
+│   ├── data_processing.py      # Hàm tiền xử lý dữ liệu tự động
+│   └── model_utils.py          # Hàm đánh giá và Cross-validation
+│
+├── report/                     # Báo cáo kỹ thuật
+│   ├── LaTeX_source/           # Mã nguồn theo template NeurIPS
+│   └── Report_Final.pdf        # Bản PDF báo cáo cuối cùng (tối đa 4 trang)
+│
+├── submissions/                # Kết quả dự báo
+│   ├── sample_submission.csv   # File mẫu đối chiếu
+│   └── final_submission.csv    # File kết quả nộp lên Kaggle
+│
+├── README.md                   # Hướng dẫn chi tiết dự án
+└── requirements.txt            # Danh sách thư viện cần thiết (pip install)
+```
