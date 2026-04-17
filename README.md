@@ -22,8 +22,12 @@ git clone https://github.com/baoduongphu/Datathon---AllForMoney.git
 ```bash
 cd Datathon---AllForMoney
 ```
-
-### 5. Cài đặt môi trường
+### 5. Tạo môi trường ảo
+```bash
+python -m venv venv
+.\venv\Scripts\activate
+```
+### 6. Cài đặt môi trường
 ```bash
 pip install -r requirements.txt
 ```
