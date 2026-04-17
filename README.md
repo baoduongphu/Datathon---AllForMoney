@@ -16,7 +16,7 @@ cd duong/dan/den/thu/muc/cua/ban
 
 ### 3. Chạy lệnh clone
 ```bash
-git clone https://github.com/baoduongphu Datathon---AllForMoney.git
+git clone https://github.com/baoduongphu/Datathon---AllForMoney.git
 ```
 ### 4. Truy cập vào thư mục dự án
 ```bash
