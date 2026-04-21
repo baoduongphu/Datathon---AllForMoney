@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual environment
+venv/
+env/
+.venv/
+myenv/
+
+# Data Files (Do not push to github as they are >100MB)
+data/
+*.csv
+
+# Models
+*.pt
+*.pth
+*.h5
+
+# IDE
+.vscode/
+.idea/
